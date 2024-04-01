@@ -1,6 +1,15 @@
 
 import StreamVideoProvider from '@/providers/StreamClientProvider'
+import { Metadata } from 'next';
 import React, { ReactNode } from 'react'
+
+export const metadata: Metadata = {
+  title: "YOOM Zoom clone",
+  description: "Video Calling App",
+  icons:{
+    icon:'/icons/logo.svg'
+  }
+};
 
 
 const RootLayout = ({children}:{children:ReactNode}) => {
